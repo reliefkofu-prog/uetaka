@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>庭じまい | 植高Green Wireframe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .checklist-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #111;
+            font-weight: bold;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .price-table th,
+        .price-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .price-table th {
+            background: #eee;
+            font-weight: bold;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .faq-q {
+            font-weight: bold;
+            display: flex;
+            /* flex for icon alignment if added later */
+            cursor: pointer;
+        }
+
+        .faq-q::before {
+            content: "Q.";
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container flex justify-between items-center" style="width: 100%;">
+            <div class="logo">
+                <a href="index.html" style="font-size: 24px; font-weight: 700;">植高Green</a>
+            </div>
+            <nav class="nav">
+                <ul class="flex items-center">
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">施工事例</a></li>
+
+                    <li>
+                        <a href="contact.html" class="btn">無料見積もり・無料相談</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Visual (Garden Closing Special) -->
+    <section class="mv placeholder-box"
+        style="height: auto; min-height: 500px; background-color: #eee; color: #111; flex-direction: column; padding: 60px 20px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 20px;">お庭の困りごと、そっと終わらせませんか。</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 40px; font-weight: bold;">― 大切にしてきたお庭だからこそ、最後まで丁寧に ―</p>
+
+        <div style="background: rgba(255,255,255,0.8); padding: 40px; max-width: 800px; margin-bottom: 30px;">
+            <p style="margin-bottom: 20px; font-style: italic;">
+                「庭の手入れが、だんだんと負担になってきた」<br>
+                「実家を相続したけれど、お庭まで管理できない」<br>
+                「このまま放っておいて大丈夫だろうか…」
+            </p>
+            <p style="margin-bottom: 20px;">
+                そんな不安を抱えながらも、誰に相談すればいいのか分からずにいませんか。<br>
+                植高Greenの庭じまいは、ただお庭を片付けるための作業ではありません。<br>
+                これまで大切にしてきたお庭や植物への想いに向き合いながら、今後の暮らしや管理の負担を見据えて整えていくための、「お庭の終活」です。
+            </p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">TOP</a> &gt; 庭じまい
+        </div>
+    </div>
+
+    <!-- What is Garden Closing -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">庭じまいとは？</h2>
+            <div class="flex gap-8">
+                <div class="placeholder-box" style="width: 40%; height: auto; min-height: 300px;">Image</div>
+                <div style="width: 60%;">
+                    <p style="margin-bottom: 20px;">
+                        庭じまいとは、今後の暮らしや管理の負担を考え、お庭にある植物を基本的にすべて整理し、管理のいらない状態に整えることです。
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        高齢化やライフスタイルの変化、空き家の増加などにより、これまで当たり前だったお庭の手入れが、次第に大きな負担になってしまうケースが増えています。<br>
+                        庭じまいは、植物をすべて撤去することを前提とした作業ではありますが、
+                        これまで大切に育ててきたお庭を、無理のない形で区切り、次の暮らしへ進むための前向きな整理でもあります。
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        必要に応じて、思い出のある植物の移植や再利用を検討しながら、
+                        今後の管理や安全面を考えたお庭へと整えていきます。
+                    </p>
+                    <div style="background: #f9f9f9; padding: 20px; border-left: 4px solid #333;">
+                        <p style="font-size: 0.9rem;">
+                            ※庭じまいは、基本的にお庭の植物をすべて撤去することを前提としています。<br>
+                            ただし、ご希望がある場合は、一部の植物を残す・別の場所へ移植する・再利用するといった対応も可能です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Check List -->
+    <section class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center">こんなお悩みはありませんか？</h2>
+            <div class="checklist-item">高齢の親がお庭の手入れをできなくなってきた</div>
+            <div class="checklist-item">相続した実家のお庭が荒れてしまっている</div>
+            <div class="checklist-item">雑草や害虫、倒木で近隣に迷惑をかけないか心配</div>
+            <div class="checklist-item">お庭の木が大きくなりすぎて危険を感じている</div>
+            <div class="checklist-item">思い出の植物を処分する決心がつかない</div>
+            <div class="checklist-item">どこまで撤去すればいいのか分からない</div>
+            <p class="text-center" style="margin-top: 30px; font-weight: bold;">
+                ひとつでも当てはまる場合、庭じまいという選択肢が、心と暮らしを軽くするきっかけになるかもしれません。
+            </p>
+        </div>
+    </section>
+
+    <!-- 3 Values -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">植高Greenが大切にしていること</h2>
+
+            <!-- Value 1 -->
+            <div class="flex gap-8 items-start" style="margin-bottom: 60px;">
+                <div style="width: 30%;">
+                    <div class="placeholder-box"
+                        style="width: 100%; aspect-ratio: 3/2; height: auto; margin-bottom: 20px;">Image</div>
+                    <div class="placeholder-box" style="width: 100%; aspect-ratio: 3/2; height: auto;">Image</div>
+                </div>
+                <div style="width: 70%;">
+                    <h3 style="margin-bottom: 20px;">1. 造園の経験を活かし、お庭全体を見て考えること</h3>
+                    <p style="margin-bottom: 20px;">
+                        植高Greenは、造園業一筋で20年にわたり、お庭づくりと向き合ってきました。
+                        「現代の名工」から直接指導を受けた剪定や石積みの技術を基盤に、目の前の作業だけでなく、お庭全体のバランスや今後の管理まで見据えたご提案を心がけています。
+                    </p>
+                    <p>
+                        剪定・伐採・抜根・草刈り・石積みなど、幅広い作業に対応できるからこそ、
+                        一部だけを整えたい場合も、全体を見直したい場合も、それぞれのご事情に合わせた庭じまいが可能です。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="flex gap-8 items-start" style="margin-bottom: 60px;">
+                <div style="width: 30%;">
+                    <div class="placeholder-box"
+                        style="width: 100%; aspect-ratio: 3/2; height: auto; margin-bottom: 20px;">Image</div>
+                    <div class="placeholder-box" style="width: 100%; aspect-ratio: 3/2; height: auto;">Image</div>
+                </div>
+                <div style="width: 70%;">
+                    <h3 style="margin-bottom: 20px;">2. 植物を「処分するもの」ではなく、想いのある存在として扱うこと</h3>
+                    <p style="margin-bottom: 20px;">
+                        庭じまいでは、状況によって植物を整理せざるを得ないこともあります。
+                        それでも植高Greenでは、できる限り処分以外の方法を考えることを大切にしています。
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        長年お庭を彩ってきた植物には、ご家族の思い出や歴史が宿っています。
+                        そのため、植物にまつわるエピソードや背景を丁寧に伺い、ご希望があれば一時的にお預かりしたうえで、他のお客様のお庭で再び活かすご提案も行っています。
+                    </p>
+                    <p>
+                        再利用の際には、その後の様子をご報告し、植物に込められた想いも次の場所へきちんと引き継ぎます。
+                        また、指定の場所への植え替えについても、植物の状態や環境を見極めながら対応しています。<br>
+                        植物をただ片付けるのではなく、無理のない形で次へつないでいく。
+                        それが、植高Greenの庭じまいの基本的な考え方です。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="flex gap-8 items-start">
+                <div style="width: 30%;">
+                    <div class="placeholder-box"
+                        style="width: 100%; aspect-ratio: 3/2; height: auto; margin-bottom: 20px;">Image</div>
+                    <div class="placeholder-box" style="width: 100%; aspect-ratio: 3/2; height: auto;">Image</div>
+                </div>
+                <div style="width: 70%;">
+                    <h3 style="margin-bottom: 20px;">3. 気持ちに寄り添い、納得して進められること</h3>
+                    <p style="margin-bottom: 20px;">
+                        庭じまいは、「どこまで手を入れるか」「何を残すか」によって、内容も費用も大きく変わります。
+                        そのため植高Greenでは、必ず現地を確認したうえで無料見積もりを行い、作業内容や考え方を分かりやすくご説明しています。
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        「全部撤去したほうがいいのか分からない」<br>
+                        「今すぐではなく、少しずつ整えたい」<br>
+                        そうした迷いや不安も含めて、時間をかけてお話を伺います。
+                    </p>
+                    <p>
+                        ご納得いただけないまま作業を進めることはなく、ご相談だけで終わる場合でも問題ありません。<br>
+                        初めて庭じまいを考える方にも、安心して話していただけること。
+                        それを大切にしながら、一つひとつのお庭と向き合っています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">料金について</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="margin-bottom: 30px;">
+                    庭じまいの費用は、お庭の広さ、植木の本数、作業内容、植物の再利用や植え替えの有無などによって大きく異なります。<br>
+                    そのため植高Greenでは、まずは無料見積もりをご案内しています。
+                </p>
+                <div style="background: #fff; padding: 30px; border: 1px solid #ddd;">
+                    <p style="font-weight: bold; margin-bottom: 20px;">現地を確認しながら、</p>
+                    <ul style="display: inline-block; text-align: left; margin-bottom: 20px;">
+                        <li>・どこまで作業するか</li>
+                        <li>・何を残し、どう活かすか</li>
+                    </ul>
+                    <p>を一緒に整理し、ご事情に合った内容をご提案します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="text-center">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">庭じまいの流れを教えてください</div>
+                    <div style="margin-top: 10px;">A. ご相談 → 現地確認 → 無料見積もり → ご納得後に施工、という流れになります。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">見積もりや相談は本当に無料ですか？</div>
+                    <div style="margin-top: 10px;">A. はい。ご相談・現地確認・お見積もりはすべて無料です。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">一部だけの庭じまいもお願いできますか？</div>
+                    <div style="margin-top: 10px;">A. 可能です。気になる箇所のみの整理にも対応しています。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">植物を別の場所に植え替えてもらえますか？</div>
+                    <div style="margin-top: 10px;">A. はい。指定の場所や環境に合わせて対応いたします。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">作業中に立ち会う必要はありますか？</div>
+                    <div style="margin-top: 10px;">A. 必須ではありません。事前に内容を確認できていれば不在でも対応可能です。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">どの季節でも庭じまいはできますか？</div>
+                    <div style="margin-top: 10px;">A. 基本的には可能ですが、植物の状態によって最適な時期をご提案することもあります。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">空き家のお庭でも対応してもらえますか？</div>
+                    <div style="margin-top: 10px;">A. はい。空き家や遠方のご実家のお庭の庭じまいにも対応しています。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">相談したら必ず依頼しなければいけませんか？</div>
+                    <div style="margin-top: 10px;">A. いいえ。内容を聞いたうえで、ゆっくりご検討いただいて構いません。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section bg-cta text-center">
+        <div class="container flex gap-8 items-center">
+            <div style="width: 50%;">
+                <h2 style="border: none; text-align: left; margin-bottom: 20px;">まずは、無料相談から</h2>
+                <p style="margin-bottom: 30px; font-size: 1.2rem; text-align: left;">お庭のことで悩む時間を、少しでも軽くできればと考えています。</p>
+                <p style="text-align: left;">
+                    「まだ迷っている」「話を聞くだけでも大丈夫」<br>
+                    そんな段階でも、どうぞお気軽にご相談ください。<br>
+                    お庭のこれからを、一緒に考えます。<br>
+                    植高Greenが、誠実に対応いたします。
+                </p>
+            </div>
+            <div style="width: 50%;">
+                <div style="background: white; padding: 40px; border: 2px solid #111; text-align: center; color: #111;">
+                    <h3 style="margin-top: 0; margin-bottom: 20px;">無料相談・無料見積もり</h3>
+                    <p style="margin-bottom: 20px;">電話・お問い合わせフォーム対応</p>
+                    <div class="flex justify-center gap-4 flex-col sm:flex-row">
+                        <a href="tel:000-0000-0000" class="btn" style="background: #111; color: #fff;">Tel:
+                            000-0000-0000</a>
+                        <a href="contact.html" class="btn"
+                            style="background: #fff; color: #111; border: 1px solid #111;">お問い合わせフォーム</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Pre-block -->
+    <section class="section" style="border-top: 1px solid #eee;">
+        <div class="container flex gap-8">
+            <div style="width: 50%;">
+                <h3>植高Green</h3>
+                <p>
+                    〒400-0043<br>
+                    山梨県甲府市国母８丁目２−２１<br>
+                    営業時間：8:00〜17:00<br>
+                    定休日：日曜
+                </p>
+            </div>
+            <div style="width: 50%;">
+                <h3>主な対応地域</h3>
+                <p>
+                    甲府市／甲斐市／昭和町／南アルプス市／笛吹市／山梨市／大月市／市川三郷町／富士川町／韮崎市／北杜市
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex justify-between items-center">
+            <div class="footer-nav">
+                <ul class="flex gap-4" style="font-size: 0.9rem;">
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Uetaka Green.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

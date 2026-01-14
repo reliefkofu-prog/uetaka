@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>お問い合わせ | 植高Green Wireframe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container flex justify-between items-center" style="width: 100%;">
+            <div class="logo">
+                <a href="index.html" style="font-size: 24px; font-weight: 700;">植高Green</a>
+            </div>
+            <nav class="nav">
+                <ul class="flex items-center">
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">施工事例</a></li>
+
+                    <li>
+                        <a href="contact.html" class="btn">無料見積もり・無料相談</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="section bg-cta page-title" style="padding: 40px 0;">
+        <div class="container">
+            <h1 style="margin-bottom: 0;">お問い合わせ</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">TOP</a> &gt; お問い合わせ
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <form action="#" method="post">
+
+                <!-- Use fieldset/legend for better accessibility if needed, but keeping simple for wireframe -->
+                <div class="form-group">
+                    <label class="form-label">お問い合わせ内容 <span
+                            style="color: #666; font-size: 0.8em; font-weight: normal;">(必須)</span></label>
+                    <div class="flex gap-4" style="flex-wrap: wrap;">
+                        <label><input type="radio" name="subject" value="estimate" checked> 無料出張見積もり依頼</label>
+                        <label><input type="radio" name="subject" value="tree-consultation"> 樹木の無料相談</label>
+                        <label><input type="radio" name="subject" value="garden-closing"> 庭じまいの相談</label>
+                        <label><input type="radio" name="subject" value="other"> その他</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="name">お名前 <span
+                            style="color: #666; font-size: 0.8em; font-weight: normal;">(必須)</span></label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="例）植高 太郎">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="address">ご住所 <span
+                            style="color: #666; font-size: 0.8em; font-weight: normal;">(必須)</span></label>
+                    <input type="text" id="address" name="address" class="form-input" placeholder="例）山梨県甲府市国母８丁目２−２１">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="tel">電話番号 <span
+                            style="color: #666; font-size: 0.8em; font-weight: normal;">(必須)</span></label>
+                    <input type="tel" id="tel" name="tel" class="form-input" placeholder="例）090-1234-5678">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">メールアドレス <span
+                            style="color: #666; font-size: 0.8em; font-weight: normal;">(必須)</span></label>
+                    <input type="email" id="email" name="email" class="form-input"
+                        placeholder="例）info@uetaka-green.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">お問い合わせ詳細</label>
+                    <textarea id="message" name="message" class="form-textarea"
+                        placeholder="ご相談内容や、ご希望の訪問日時などをご記入ください。"></textarea>
+                </div>
+
+                <div class="form-group" style="margin-top: 40px; text-align: center;">
+                    <label>
+                        <input type="checkbox" name="privacy" required>
+                        <a href="#" style="text-decoration: underline;">プライバシーポリシー</a>に同意する
+                    </label>
+                </div>
+
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn" style="width: 300px;">送信する</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Pre-block -->
+    <section class="section" style="border-top: 1px solid #eee;">
+        <div class="container flex gap-8">
+            <div style="width: 50%;">
+                <h3>植高Green</h3>
+                <p>
+                    〒400-0043<br>
+                    山梨県甲府市国母８丁目２−２１<br>
+                    営業時間：8:00〜17:00<br>
+                    定休日：日曜
+                </p>
+            </div>
+            <div style="width: 50%;">
+                <h3>主な対応地域</h3>
+                <p>
+                    甲府市／甲斐市／昭和町／南アルプス市／笛吹市／山梨市／大月市／市川三郷町／富士川町／韮崎市／北杜市
+                </p>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                    ※その他の地域の方も、ぜひご相談ください。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex justify-between items-center">
+            <div class="footer-nav">
+                <ul class="flex gap-4" style="font-size: 0.9rem;">
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Uetaka Green.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

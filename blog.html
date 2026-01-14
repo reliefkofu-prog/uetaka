@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>施工事例 | 植高Green Wireframe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .category-tab {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #999;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            /* Slight roundness for buttons */
+        }
+
+        .category-tab.active {
+            background-color: #111;
+            color: #FFF;
+            border-color: #111;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        .page-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .page-item.active {
+            background-color: #111;
+            color: #fff;
+            border-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container flex justify-between items-center" style="width: 100%;">
+            <div class="logo">
+                <a href="index.html" style="font-size: 24px; font-weight: 700;">植高Green</a>
+            </div>
+            <nav class="nav">
+                <ul class="flex items-center">
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">施工事例</a></li>
+
+                    <li>
+                        <a href="contact.html" class="btn">無料見積もり・無料相談</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="section bg-cta page-title" style="padding: 40px 0;">
+        <div class="container">
+            <h1 style="margin-bottom: 0;">施工事例</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">TOP</a> &gt; 施工事例
+        </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container text-center">
+            <a href="#" class="category-tab active">すべて</a>
+            <a href="#" class="category-tab">庭木の手入れ</a>
+            <a href="#" class="category-tab">庭づくり</a>
+            <a href="#" class="category-tab">庭じまい</a>
+            <a href="#" class="category-tab">その他</a>
+        </div>
+    </section>
+
+    <!-- Post List -->
+    <section class="section">
+        <div class="container">
+            <div class="grid gap-8" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- Post 1 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.02.01</div>
+                    <h4 style="font-size: 1.1rem;">甲府市 A様邸 松の剪定を行いました</h4>
+                </div>
+                <!-- Post 2 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.28</div>
+                    <h4 style="font-size: 1.1rem;">【事例】お庭の大改造！雑草対策もバッチリ</h4>
+                </div>
+                <!-- Post 3 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.25</div>
+                    <h4 style="font-size: 1.1rem;">庭じまいのご相談が増えています</h4>
+                </div>
+                <!-- Post 4 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.20</div>
+                    <h4 style="font-size: 1.1rem;">冬季の消毒作業について</h4>
+                </div>
+                <!-- Post 5 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.15</div>
+                    <h4 style="font-size: 1.1rem;">南アルプス市にて抜根作業</h4>
+                </div>
+                <!-- Post 6 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.10</div>
+                    <h4 style="font-size: 1.1rem;">新年のご挨拶</h4>
+                </div>
+                <!-- Post 7 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2024.01.05</div>
+                    <h4 style="font-size: 1.1rem;">甲府市 B様邸 伐採作業</h4>
+                </div>
+                <!-- Post 8 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2023.12.28</div>
+                    <h4 style="font-size: 1.1rem;">年末のお庭大掃除</h4>
+                </div>
+                <!-- Post 9 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2023.12.20</div>
+                    <h4 style="font-size: 1.1rem;">笛吹市 C様邸 植栽工事</h4>
+                </div>
+                <!-- Post 10 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2023.12.15</div>
+                    <h4 style="font-size: 1.1rem;">石積みの補修を行いました</h4>
+                </div>
+                <!-- Post 11 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2023.12.10</div>
+                    <h4 style="font-size: 1.1rem;">冬季剪定のご予約受付中</h4>
+                </div>
+                <!-- Post 12 -->
+                <div class="card">
+                    <div class="card-img">Thumbnail</div>
+                    <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">2023.12.01</div>
+                    <h4 style="font-size: 1.1rem;">施工事例を更新しました</h4>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page-item active">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item">&gt;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Pre-block -->
+    <section class="section" style="border-top: 1px solid #eee;">
+        <div class="container flex gap-8">
+            <div style="width: 50%;">
+                <h3>植高Green</h3>
+                <p>
+                    〒400-0043<br>
+                    山梨県甲府市国母８丁目２−２１<br>
+                    営業時間：8:00〜17:00<br>
+                    定休日：日曜
+                </p>
+            </div>
+            <div style="width: 50%;">
+                <h3>主な対応地域</h3>
+                <p>
+                    甲府市／甲斐市／昭和町／南アルプス市／笛吹市／山梨市／大月市／市川三郷町／富士川町／韮崎市／北杜市
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex justify-between items-center">
+            <div class="footer-nav">
+                <ul class="flex gap-4" style="font-size: 0.9rem;">
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="services.html">サービス内容</a></li>
+                    <li><a href="garden-closing.html">庭じまい</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Uetaka Green.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
